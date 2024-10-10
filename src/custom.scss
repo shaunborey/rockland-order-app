@@ -1,0 +1,21 @@
+/* Override Bootstrap variables */
+$primary: #c72c2c; /* Custom primary color */
+$secondary: #3185ba;
+$info: #7c8c9f;
+$dark: #243f5f;
+
+/* Import Bootstrap's SCSS files */
+@import "~bootstrap/scss/bootstrap";
+
+.btn-
+
+/* Customize the hover color of the items in the select control */
+.form-control:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+}
+
+select.form-control option:hover {
+    background-color: $primary;
+    color: #6f6f6f;
+}

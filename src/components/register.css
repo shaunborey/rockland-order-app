@@ -1,0 +1,17 @@
+.register-container {
+    margin-top: 40px;
+}
+
+.full-width-rows {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}

@@ -1,0 +1,16 @@
+.cartItem-container {
+    margin-top: 40px;
+    width: "100%";
+}
+
+.cartButton {
+    float: right;
+    width: 150px;
+    margin: 10px 5px;
+}
+
+.orderTotal {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+}

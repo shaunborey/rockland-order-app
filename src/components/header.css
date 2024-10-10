@@ -1,0 +1,18 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 40px;
+    z-index: 999999;
+}
+
+.cartNavButton {
+    display: inline-block;
+    margin-right: 5px;
+}

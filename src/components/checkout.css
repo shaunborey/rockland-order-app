@@ -1,0 +1,10 @@
+.checkoutSection {
+    width: 100%;
+    padding: 20px;
+    margin: 5px;
+}
+
+.invalidField {
+    border-color: red;
+    border-width: 2px;
+}
