@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Rockland Ordering Application - React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the codebase for the front-end React application of the demo Rockland Ordering Application that I developed in response to the following prompt from a potential employer:
 
-## Available Scripts
+- We have an upcoming project that requires a change in our system that handles ordering. We need a button added to this system, which allows a user to upload a purchase order (a pdf). The user needs to upload a purchase order to be able to finish the order. PDF should also be viewable.
 
-In the project directory, you can run:
+-  Programming with (or a combination of) C#/.net/html/JavaScript(any JS framework), provide a small demo of how this might work. Provide working code to us in any way you feel comfortable, so we can run and view the code. You can go as simple, or as big as you want.
 
-### `npm start`
+To run the full application, follow these steps to configure the components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the `RocklandOrderAPI` repository, open the project in Visual Studio, and perform these steps:
+    - In the `appsettings.json` file, modify the "DefaultConnection" SQL connection string as needed to point to a SQL Server instance
+    - Build the solution and ensure all packages are properly installed
+    - Using the Package Manager Console, run the command `Update-Database` which will cause Entity Framework to create the database and objects using the provided connection string.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Download the `DataScript.sql` file from the `Rockland-App-Supporting-Files` repository and execute it on the database to insert the required static data.
+3. Clone the `rockland-order-app` repository and open the project folder in Visual Studio Code.
+4. In Visual Studio, start the RocklandOrderAPI application.
+5. In Visual Studio Code, open a terminal and run the command `npm run start` to start the React application
+6. Use the `Register` feature in the application to create a user, then you can add some of the products and go through the checkout process.
